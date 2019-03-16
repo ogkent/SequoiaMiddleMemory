@@ -12,6 +12,8 @@
 		12F43554223D5E7F00D4CF96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F43552223D5E7F00D4CF96 /* Main.storyboard */; };
 		12F43556223D5E8000D4CF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F43555223D5E8000D4CF96 /* Assets.xcassets */; };
 		12F43559223D5E8000D4CF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F43557223D5E8000D4CF96 /* LaunchScreen.storyboard */; };
+		12F43562223D5EE300D4CF96 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F43560223D5EE300D4CF96 /* CardViewController.swift */; };
+		12F43563223D5EE300D4CF96 /* UIColor+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F43561223D5EE300D4CF96 /* UIColor+util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		12F43555223D5E8000D4CF96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12F43558223D5E8000D4CF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12F4355A223D5E8000D4CF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F43560223D5EE300D4CF96 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		12F43561223D5EE300D4CF96 /* UIColor+util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				12F4354E223D5E7F00D4CF96 /* AppDelegate.swift */,
-				12F43550223D5E7F00D4CF96 /* ViewController.swift */,
-				12F43552223D5E7F00D4CF96 /* Main.storyboard */,
 				12F43555223D5E8000D4CF96 /* Assets.xcassets */,
-				12F43557223D5E8000D4CF96 /* LaunchScreen.storyboard */,
+				12F43560223D5EE300D4CF96 /* CardViewController.swift */,
 				12F4355A223D5E8000D4CF96 /* Info.plist */,
+				12F43557223D5E8000D4CF96 /* LaunchScreen.storyboard */,
+				12F43552223D5E7F00D4CF96 /* Main.storyboard */,
+				12F43561223D5EE300D4CF96 /* UIColor+util.swift */,
+				12F43550223D5E7F00D4CF96 /* ViewController.swift */,
 			);
 			path = SequoiaMiddleMemory;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				12F43551223D5E7F00D4CF96 /* ViewController.swift in Sources */,
 				12F4354F223D5E7F00D4CF96 /* AppDelegate.swift in Sources */,
+				12F43562223D5EE300D4CF96 /* CardViewController.swift in Sources */,
+				12F43563223D5EE300D4CF96 /* UIColor+util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
