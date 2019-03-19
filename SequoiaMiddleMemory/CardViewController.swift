@@ -136,4 +136,10 @@ class CardViewController: UIViewController {
     
   }
   
+  func dismiss() {
+    willMove(toParent: nil)
+    view.removeFromSuperview()
+    removeFromParent()
+  }
+  
 }
