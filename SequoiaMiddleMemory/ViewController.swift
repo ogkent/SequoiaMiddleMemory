@@ -9,20 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
   
-//  let rows = 2
-//  let cols = 3
-//  let spacing = Float(100)
   
-//  let rows = 3
-//  let cols = 3
-//  let spacing = Float(100)
   
-    let rows = 3
-    let cols = 6
-    let spacing = Float(30)
+  let rows = 3
+  let cols = 6
+  let spacing = Float(30)
   
   private let messages:[String] = [
-    "🌭", "👻", "🙅🏾‍♀️", "🧤", "🎺", "🏔", "🕹", "🛸", "🎯", "🧯", "🧟‍♂️", "🕺🏻", "🧵", "🐝", "🐲", "🥥", "🌯", "🏓", "🎨", "🚜", "🗿", "💳", "🧬", "🎒", "🌵", "🌻", "🍇", "⛓"
+    "🌭", "👻", "🙅🏾‍♀️", "🧤", "🎺", "🏔", "🕹", "🛸", "🎯",
+    "🧯", "🧟‍♂️", "🕺🏻", "🧵", "🐝", "🐲", "🥥", "🌯", "🏓",
+    "🎨", "🚜", "🗿", "💳", "🧬", "🎒", "🌵", "🌻", "🍇",
+    "⛓", "🦋", "🍁", "🌈", "🧀", "🏄🏽‍♀️", "🚂", "🦠", "🐳"
   ]
   
   private var cards:[CardViewController] = {
@@ -51,6 +48,8 @@ class ViewController: UIViewController {
   
   func prepareCards() {
     
+    print("Preparing cards (rows=\(rows), cols=\(cols))")
+    
 //    let preparedMessages = preparedMessagesLinear()
     let preparedMessages = preparedMessagesRandom()
     
@@ -73,7 +72,7 @@ class ViewController: UIViewController {
   
   func layoutCards() {
     
-    print("layoutCards")
+    print("Laying out \(cards.count) cards")
     
     let size = self.view.frame.size
     let cardHeight = floorf((Float(size.height) - (Float(rows) + 1) * spacing) / Float(rows))
@@ -186,6 +185,7 @@ class ViewController: UIViewController {
   
   func resetBoard() {
     
+    print("Reset the board")
     numberOfTurns = 0
     
     var delay = 0.0;
